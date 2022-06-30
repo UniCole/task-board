@@ -1,0 +1,355 @@
+body {
+    background-image: url(assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #d1b2d3;
+    outline: 1px solid #d1b2d3;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-bottom: -24px;
+    margin-top: 20px;
+    background: -webkit-linear-gradient(#c189b1, #8857a5, #5964b5, #5e8cb5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    width: 675px;
+    height: 675px;
+    margin-top: -41px;
+}
+
+.note-pad {
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    position: relative;
+}
+
+#title-label {
+    position: absolute;
+    left: 180px;
+    top: 139px;
+    font-size: 21px;
+    font-family: 'Handlee', cursive;
+    color: #274769;
+    font-weight: bold;
+}
+
+.title-box {
+    position: absolute;
+    left: 177px;
+    top: 169px;
+    width: 305px;
+    height: 21px;
+    background: transparent;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: bold;
+}
+
+.title-box:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+#task-label {
+    position: absolute;
+    left: 180px;
+    top: 209px;
+    font-size: 21px;
+    font-family: 'Handlee', cursive;
+    color: #274769;
+    font-weight: bold;
+}
+
+.text-box {
+    position: absolute;
+    left: 177px;
+    top: 240px;
+    width: 307px;
+    height: 105px;
+    background: transparent;
+    line-height: 30px;
+    font-size: 18px;
+    resize: none;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: bold;
+}
+
+.text-box::-webkit-scrollbar {
+    width: 1em;
+}
+
+.text-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.text-box::-webkit-scrollbar-thumb {
+    background-color: #668dafd0;
+    outline: 1px solid #668dafd0;
+}
+
+.text-box:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+#dateAndTime-label {
+    position: absolute;
+    left: 180px;
+    top: 364px;
+    font-size: 21px;
+    font-family: 'Handlee', cursive;
+    color: #274769;
+    font-weight: bold;
+}
+
+.date-box {
+    position: absolute;
+    left: 267px;
+    top: 410px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #5e8cb5;
+    padding: 4.4px;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-weight: bold;
+
+}
+
+#date:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+.time-box {
+    position: absolute;
+    left: 375px;
+    top: 410px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #5e8cb5;
+    padding: 3.2px;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-weight: bold;
+}
+
+#time:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+.note img {
+    height: 30%;
+    width: 30%;
+}
+
+.note {
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-image: url(assets/img/note.png);
+    width: 250px;
+    height: 250px;
+    margin: -33px 0 0 5px;
+    position: relative;
+}
+
+.note {
+    margin-top: 25px;
+    font-size: 19px;
+    /* text-align: center; */
+    -webkit-animation: fadein 1.8s;
+    -moz-animation: fadein 1.8s;
+    -ms-animation: fadein 1.8s;
+    -o-animation: fadein 1.8s;
+    animation: fadein 1.8s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.noteTitle {
+    overflow: auto;
+    position: absolute;
+    top: 32px;
+    left: 37px;
+    overflow-wrap: break-word;
+    inline-size: 187px;
+    height: 43%;
+    overflow-y: auto;
+    line-height: 26px;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: bolder;
+    font-size: 22px;
+    color: #3d1d57;
+    text-align: center;
+}
+
+.noteTextArea {
+    overflow: auto;
+    position: absolute;
+    top: 62px;
+    left: 37px;
+    overflow-wrap: break-word;
+    inline-size: 187px;
+    height: 43%;
+    overflow-y: auto;
+    line-height: 26px;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: bold;
+    font-size: 17px;
+    color: #492566;
+    
+}
+
+.noteTextArea::-webkit-scrollbar {
+    width: 1em;
+}
+
+.noteTextArea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.noteTextArea::-webkit-scrollbar-thumb {
+    background-color: #ae8eb0;
+    outline: 1px solid #ae8eb0;
+}
+
+.noteDate {
+    position: absolute;
+    right: 37px;
+    top: 195px;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: bold;
+    font-size: 17px;
+    color: #492566
+}
+
+.noteTime {
+    position: absolute;
+    right: 121px;
+    top: 195px;
+    font-family: Segoe UI Variable Small Light;
+    font-weight: bold;
+    font-size: 17px;
+    color: #492566
+}
+
+.notes {
+    /* text-align: center; */
+    margin-top: -57px;
+}
+
+.save {
+
+    position: absolute;
+    top: 445px;
+    left: 219px;
+    width: 90px;
+    height: 32px;
+}
+
+.reset {
+    position: absolute;
+    top: 445px;
+    left: 333px;
+    width: 90px;
+    height: 32px;
+}
+
+.button-element {
+    position: absolute;
+    background-image: url(assets/img/deleteBtn.png);
+    background-repeat: no-repeat;
+    top: 26px;
+    right: 33px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+}
+
+.note:hover .button-element {
+    visibility: visible;
+}
+
+.delete {
+    width: 31px;
+    height: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#save,
+#reset {
+    background: linear-gradient(to bottom right, #c189b1, #8857a5, #5964b5, #5e8cb5);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+#save:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+#reset:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+#save:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}
+
+#reset:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #8857a5, .125rem .125rem 1rem #5e8cb5;
+}

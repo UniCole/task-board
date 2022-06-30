@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+
+    <!-- H1-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <!-- text font: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+    <!-- warning alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1> Task Board </h1>
+
+    <div class="note-pad" >
+
+        <img src="assets/img/notePad.png" class="responsive-image">
+
+        <label id="title-label">Title:</label>
+        <input type="text" class="title-box" id="title" dir="auto">
+
+        <label id="task-label">Description: </label>
+        <textarea id="textarea" class="text-box" rows="4" cols="50" dir="auto"></textarea>
+
+        <label id="dateAndTime-label">Enter date and time: </label>
+        
+        <input type="date" id="date" class="date-box">
+        <input type="time" id="time" class="time-box">
+
+
+        <button type="save" onclick="addNote()" id="save" class="save" value="Submit">Add</button>
+        <button type="reset" onclick="removeText()" id="reset" class="reset" value="Reset">Clear</button>
+
+    </div>
+
+
+    <div  class="notes" dir="auto">
+        <pre id="notes"> </pre>
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
