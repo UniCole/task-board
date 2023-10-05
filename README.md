@@ -1,5 +1,5 @@
 # Task Board Project
-## First project from "John Bryce" college based on: HTML, CSS, Javascript
+## The project based on: HTML, CSS, Javascript
 
 ### Project requirements:
 ##### Live server plugin for VScode
